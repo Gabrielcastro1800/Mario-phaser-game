@@ -8,17 +8,21 @@ var config = {
         update: update
     }
 };
+var plataforma
 
 var game = new Phaser.Game(config);
 
 function preload ()
 {
     this.load.image("mario","mario.png");
+    this.load.image("brick","brick.png");
 }
 
 function create ()
 {
-    this.add.image(400, 300, "mario");
+    plataforma = this.physics.add.staticGroup();
+    this.add.image(64, 64, "mario");
+    plataforma.create(400, 568, "brick").setScale(2).refreshBody();
 
 }
 
