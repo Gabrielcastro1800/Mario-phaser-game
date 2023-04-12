@@ -6,7 +6,14 @@ var config = {
         preload: preload,
         create: create,
         update: update
-    }
+    },
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 300 },
+            debug: false
+        }
+    },
 };
 var plataforma
 
@@ -22,7 +29,7 @@ function create ()
 {
     plataforma = this.physics.add.staticGroup();
     this.add.image(64, 64, "mario").setScale(0.3,0.3);
-    plataforma.create(400, 568, "brick").setScale(2).refreshBody();
+    plataforma.create(600, 400, "brick");
 
 }
 
