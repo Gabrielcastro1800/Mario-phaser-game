@@ -28,7 +28,7 @@ function preload ()
 function create ()
 {
     plataforma = this.physics.add.staticGroup();
-    plataforma.create(600, 400, "brick".setScale(0.5,0.5));
+    plataforma.create(600, 400, "brick").setScale(0.5,0.5);
     
 
 }
