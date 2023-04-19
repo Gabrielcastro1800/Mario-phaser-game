@@ -29,18 +29,20 @@ function preload ()
 
 function create ()
 {
-    mariop = this.physics.add.sprite(100, 450, 'dude');
+    mariop = this.physics.add.sprite(100, 10, "mario");
+    plataforma = this.physics.add.staticGroup();
     cursors = this.input.keyboard.createCursorKeys();
     this.physics.add.collider(mariop, plataforma);
+    mariop.setBounce(0.4);
     mariop.setCollideWorldBounds(true);
-    plataforma = this.physics.add.staticGroup();
-    plataforma.create(600, 400, "brick").setScale(3.5,0.5);
-    mariop.create(100,100,"mario").setScale(0.5,0.5)
+    plataforma.create(600, 400, "brick").setScale(36.5,0.5).refreshBody();;
+
 
 }
 
 function update ()
 {
+    
     if (cursors.left.isDown)
     {
         mariop.setVelocityX(-160);
@@ -57,7 +59,7 @@ function update ()
     
     }
     
-    if (cursors.up.isDown && player.body.touching.down)
+    if (cursors.up.isDown && mariop.body.touching.down)
     {
         mariop.setVelocityY(-330);
     }
