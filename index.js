@@ -28,8 +28,8 @@ function preload ()
 function create ()
 {
     plataforma = this.physics.add.staticGroup();
-    this.add.image(600, 330, "mario").setScale(0.1,0.1);
     plataforma.create(600, 400, "brick".setScale(0.5,0.5));
+    
 
 }
 
