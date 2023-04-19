@@ -29,6 +29,7 @@ function preload ()
 
 function create ()
 {
+    mariop = this.physics.add.sprite(100, 450, 'dude');
     cursors = this.input.keyboard.createCursorKeys();
     this.physics.add.collider(mariop, plataforma);
     mariop.setCollideWorldBounds(true);
