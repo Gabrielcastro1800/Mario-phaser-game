@@ -31,7 +31,6 @@ function create ()
 {
     cursors = this.input.keyboard.createCursorKeys();
     this.physics.add.collider(mariop, plataforma);
-    mariop.body.setGravityY(300)
     mariop.setCollideWorldBounds(true);
     plataforma = this.physics.add.staticGroup();
     plataforma.create(600, 400, "brick").setScale(3.5,0.5);
