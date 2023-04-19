@@ -44,22 +44,22 @@ function update ()
 {
     if (cursors.left.isDown)
     {
-        player.setVelocityX(-160);
+        mariop.setVelocityX(-160);
     
     }
     else if (cursors.right.isDown)
     {
-        player.setVelocityX(160);
+        mariop.setVelocityX(160);
     
     }
     else
     {
-        player.setVelocityX(0);
+        mariop.setVelocityX(0);
     
     }
     
     if (cursors.up.isDown && player.body.touching.down)
     {
-        player.setVelocityY(-330);
+        mariop.setVelocityY(-330);
     }
 }
