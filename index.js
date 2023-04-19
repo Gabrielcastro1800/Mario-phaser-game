@@ -31,12 +31,11 @@ function create ()
 {
     cursors = this.input.keyboard.createCursorKeys();
     this.physics.add.collider(mariop, plataforma);
-    mariop = this.physics.add.sprite(100, 450, "mario");
     mariop.body.setGravityY(300)
     mariop.setCollideWorldBounds(true);
     plataforma = this.physics.add.staticGroup();
     plataforma.create(600, 400, "brick").setScale(3.5,0.5);
-    
+    mariop.create(100,100,"mario")
 
 }
 
