@@ -25,7 +25,7 @@ function preload ()
 {
         this.load.spritesheet("mario", 
         "mario.png",
-        { frameWidth: 32, frameHeight: 48 }
+        { frameWidth: 32, frameHeight: 32 }
     );
     this.load.image("wall","wallpaper.png");
     this.load.image("brick","brick.png");
