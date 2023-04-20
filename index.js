@@ -52,19 +52,19 @@ function create ()
     key: "right",
     frames: this.anims.generateFrameNumbers("mario", { start: 7, end: 8 }),
     frameRate: 20,
-    repeat: -1
+    repeat: 1
 });
   this.anims.create({
     key: "normal1",
     frames: this.anims.generateFrameNumbers("mario", 5),
     frameRate: 1,
-    repeat: -1
+    repeat: 1
 });
 this.anims.create({
     key: "normal2",
     frames: this.anims.generateFrameNumbers("mario", 6),
     frameRate: 1,
-    repeat: -1
+    repeat: 1
 });
     
 
