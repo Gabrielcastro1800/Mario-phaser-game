@@ -45,13 +45,13 @@ function create ()
     this.anims.create({
     key: "left",
     frames: this.anims.generateFrameNumbers("mario", { start: 4, end: 3 }),
-    frameRate: 5,
+    frameRate: 20,
     repeat: -1
 });
     this.anims.create({
     key: "right",
     frames: this.anims.generateFrameNumbers("mario", { start: 7, end: 8 }),
-    frameRate: 5,
+    frameRate: 20,
     repeat: -1
 });
   this.anims.create({
