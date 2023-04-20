@@ -77,8 +77,12 @@ function update ()
     {
         mariop.setVelocityX(-160);
         mariop.anims.play("left", true);
-        mariop.anims.play("normal1", true);
 
+    
+    }else
+    {
+        mariop.setVelocityX(0);
+        mariop.anims.play("normal1", true);
     
     }
     if (cursors.right.isDown)
