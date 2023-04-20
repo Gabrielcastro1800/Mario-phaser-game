@@ -33,9 +33,9 @@ function preload ()
 
 function create ()
 {
-    this.add.image(400, 300, "wall");
+    this.add.image(0, 0, "wall").setScale(10,10);
     mariop = this.physics.add.sprite(100, 10, "mario");
-    mariop.setScale(1,1)
+    mariop.setScale(2,2)
     plataforma = this.physics.add.staticGroup();
     cursors = this.input.keyboard.createCursorKeys();
     this.physics.add.collider(mariop, plataforma);
