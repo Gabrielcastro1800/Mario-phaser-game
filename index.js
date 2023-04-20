@@ -35,7 +35,7 @@ function create ()
 {
     this.add.image(400, 300, "wall");
     mariop = this.physics.add.sprite(100, 10, "mario");
-    mariop.setScale(0.1,0.1)
+    mariop.setScale(1,1)
     plataforma = this.physics.add.staticGroup();
     cursors = this.input.keyboard.createCursorKeys();
     this.physics.add.collider(mariop, plataforma);
