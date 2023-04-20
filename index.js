@@ -25,7 +25,7 @@ function preload ()
 {
         this.load.spritesheet("mario", 
         "mario.png",
-        { frameWidth: 40, frameHeight: 40 }
+        { frameWidth: 36, frameHeight: 40 }
     );
     this.load.image("wall","wallpaper.png");
     this.load.image("brick","brick.png");
@@ -79,10 +79,10 @@ function update ()
         mariop.anims.play("left", true);
 
     
-    }else
-    {
-        mariop.setVelocityX(0);
+    }else if(!(cursors.right.isDown))
+    { 
         mariop.anims.play("normal1", true);
+        mariop.setVelocityX(0);
     
     }
     if (cursors.right.isDown)
@@ -90,10 +90,11 @@ function update ()
         mariop.setVelocityX(160);
         mariop.anims.play("right", true);
     
-    }else
+    }else if(!(cursors.left.isDown))
     {
-        mariop.setVelocityX(0);
+       
         mariop.anims.play("normal2", true);
+        mariop.setVelocityX(0);
     
     }
     
