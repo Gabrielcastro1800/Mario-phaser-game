@@ -36,7 +36,7 @@ function create ()
     this.physics.add.collider(mariop, plataforma);
     mariop.setBounce(0.4);
     mariop.setCollideWorldBounds(true);
-    plataforma.create(600, 400, "brick").setScale(36.5,0.5).refreshBody();;
+    plataforma.create(600, 400, "brick").setScale(20,0.5).refreshBody();;
 
 
 }
