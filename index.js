@@ -33,7 +33,7 @@ function preload ()
 
 function create ()
 {
-    this.add.image(0, 0, "wall").setScale(5,5);
+    this.add.image(0, 0, "wall").setScale(5,6);
     mariop = this.physics.add.sprite(100, 10, "mario");
     mariop.setScale(2,2)
     plataforma = this.physics.add.staticGroup();
