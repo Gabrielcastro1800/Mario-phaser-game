@@ -23,6 +23,10 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
+        this.load.spritesheet("mario", 
+        "mario.png",
+        { frameWidth: 32, frameHeight: 48 }
+    );
     this.load.image("mario","mario.png");
     this.load.image("brick","brick.png");
 }
