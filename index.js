@@ -27,7 +27,7 @@ function preload ()
         "mario.png",
         { frameWidth: 32, frameHeight: 48 }
     );
-    this.load.image("mario","mario.png");
+    this.load.image("wall","wallpaper.png");
     this.load.image("brick","brick.png");
 }
 
