@@ -30,7 +30,7 @@ function preload ()
 function create ()
 {
     mariop = this.physics.add.sprite(100, 10, "mario");
-    mariop.setScale(0.3,0.3)
+    mariop.setScale(0.1,0.1)
     plataforma = this.physics.add.staticGroup();
     cursors = this.input.keyboard.createCursorKeys();
     this.physics.add.collider(mariop, plataforma);
